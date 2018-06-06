@@ -1,0 +1,12 @@
+.bottom-section .button:nth-child(1) h4::before {
+    content: '←';
+}
+
+.bottom-section .button:nth-child(2) h4::before {
+    content: '→';
+}
+
+.main-section .saying {
+    font-size: 14pt;
+    margin: 0 2em;
+}

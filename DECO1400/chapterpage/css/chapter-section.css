@@ -1,0 +1,30 @@
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.main-section h2 {
+    font-size: 24pt;
+    margin-bottom: 5px;
+}
+
+.main-section .from-start {
+    align-self: flex-start;
+}
+
+.main-section word {
+    font-family: 'Comic Sans MS', Arial, Helvetica, sans-serif;
+    color: #663C21;
+    font-size: 18pt;
+}
+
+.main-section p {
+    margin: 15px 0;
+    font-size: 16pt;
+}
+
+.main-section p:nth-last-child(1) {
+    margin-bottom: 3em;
+}

@@ -1,0 +1,57 @@
+
+
+/* main section */
+
+
+/* left-section */
+.section-left {
+    /* margin-right: 15px; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-left .link ul {
+    padding: 0;
+}
+
+.section-left .link li {
+    list-style: none;
+}
+
+.section-left .link li:before {
+    content: "🕷";
+    margin-right: 0.5em;
+}
+
+/* right-section */
+.section-right {
+    width: 50%;
+}
+
+.section-right p {
+    line-height: 1.75em;
+}
+
+/* button-section */
+/* pig-animation */
+.pig-logo img {
+    cursor: pointer;
+    width: 70px;
+}
+
+.pig-animation {
+    animation: pig-move-right linear 7s alternate;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pig-move-right {
+    0% {
+        transform:  translate(0px, 0px);
+    }
+    100% {
+        transform:  translate(700px, 0px);
+    }
+}

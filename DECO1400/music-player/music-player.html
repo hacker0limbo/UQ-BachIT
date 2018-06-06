@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="audio-image">
+            <img class="audio-block" src="img/image.png">
+        </div>
+        <audio class='audio-player' data-index='0'>
+              <source src="musics/Ordinary-miracle.mp3">
+        </audio >
+        <div class="music-button">
+            <img class='pre-button' id="id-pre-button" src="img/pre.png">
+            <img class='play-button ' id="id-play-button" src="img/play.png">
+            <img class='pause-button button-hide' id="id-pause-button" src="img/pause.png">
+            <img class='next-button' id="id-next-button" src="img/next.png">
+        </div>
+        <div class="music-list">
+            <div class="audio-circle">Ordinary miracle</div>
+            <div class="audio-circle">In my life</div>
+            <div class="audio-circle">Fish in the pool</div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="../dom-utils.js" charset="utf-8"></script>
+    <script src="./js/music-src-list.js" charset="utf-8"></script>
+    <script src="js/music.js" charset="utf-8"></script>
+    
+</body>
+</html>

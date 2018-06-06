@@ -1,0 +1,35 @@
+.bottom-section .button:nth-child(1) h4::before {
+    content: '←';
+}
+
+
+.bottom-section .button:nth-child(2) h4::before {
+    content: '🕷';
+}
+
+
+/* loading animation */
+h1 {
+    position: relative;
+    color: #E8C203;
+    opacity: 0.7;
+    font-size: 5em
+}
+
+h1:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    max-width: 7em;
+    white-space: nowrap;
+    color: #EE7600;
+    opacity: 1;
+    animation: loading 8s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+}

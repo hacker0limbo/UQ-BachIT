@@ -1,0 +1,60 @@
+section {
+    padding-bottom: 0.5em;
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* section fonts */
+section h1, h2, h3, h4, h5, h6 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+/* section-nav */
+.section-nav a {
+    color: #3591ED;
+}
+
+.section-nav a:hover {
+    color: #f40000;
+}
+
+hr {
+    border-width: 2px;
+}
+
+/* main-section */
+.main-section {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-section h2 {
+    color: #f40000;
+}
+
+/* bottom-section */
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* button */
+.bottom-section .button h4 {
+    /* border: 1px solid grey; */
+    margin: 0.4em 0;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #E8C203;
+}
+
+.bottom-section .button h4:hover {
+    background-color: #F8A83E;
+}
+
+.bottom-section .button h4::before {
+    content: '🕷';
+}

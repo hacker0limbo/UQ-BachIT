@@ -1,0 +1,89 @@
+/* drop down */
+nav {
+    padding: 0 1em;
+    margin-top: 0.1em;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/grass.png);
+}
+
+/* spider move img */
+
+.spider-walking {
+    height: 40px;
+    animation: walking linear 5s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes walking {
+    0% {
+        transform:  translate(0px, 0px);
+    }
+    50% {
+        transform:  translate(-300px, 0px);
+    }
+    100% {
+        transform:  translate(0px, 0px);
+    }
+}
+
+
+/* drop down menu */
+
+#menu {
+    font-family: Arial;
+    font-size: 18px;
+    width: 400px;
+    overflow: hidden;
+}
+
+#menu, #menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+#menu li a {
+    /* text-align: left; */
+    font-size: 15.5pt;
+    font-family: cursive;
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #5C1300;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    color: #f40000;
+}
+
+#menu li ul {
+    border-radius: 2px;
+}
+
+#menu li ul li {
+    background-image: url(../img/grass-part.png);
+    text-align: center;
+    width: 105px;
+    margin: 0 0 0 -6px;
+    padding: 0;
+    float: none;
+}
+
+#menu li ul {
+    display: none;
+    position: absolute;
+}
+
+#menu li:hover ul {
+    display: block;
+}

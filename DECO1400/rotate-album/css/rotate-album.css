@@ -1,0 +1,77 @@
+#album {
+    width: 255px;
+    height: 166.5px;
+    position: absolute;
+    left: 24%;
+    top: 30%;
+    perspective: 500px;
+    perspective-origin: 50% 50%;
+}
+
+#wrapper {
+    position:relative;
+    transform-style: preserve-3d;
+    transition: -webkit-transform .6s;
+    position:relative;
+    transform: rotateX(30deg);
+    width: 255px;
+    height: 166.5px;
+}
+
+
+#wrapper .photos {
+    position :absolute;
+    width: 255px;
+    height: 166.5px;
+    background-size :cover;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.focus {
+    box-shadow: 0 0 20px rgba(255,255,255,1);
+}
+
+#wrapper .phoA {
+    transform: rotateX(330deg) rotateY(-4deg) translateZ(164.19px);
+}
+
+#wrapper .phoB {
+    transform: rotateX(270deg) rotateY(-4deg) translateZ(164.19px);
+}
+
+#wrapper .phoC {
+    transform: rotateX(210deg) rotateY(-4deg) translateZ(164.19px);
+}
+
+#wrapper .phoD {
+    transform: rotateX(150deg) rotateY(-4deg) translateZ(164.19px);
+}
+
+#wrapper .phoE {
+    transform: rotateX(90deg) rotateY(-4deg) translateZ(164.19px);
+}
+
+#wrapper .phoF {
+    transform: rotateX(30deg) rotateY(-4deg) translateZ(164.19px);
+}
+
+.picMask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0;
+    top: 0;
+}
+
+.pic {
+    width: 1000px;
+    height: 666px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-333px auto auto -500px;
+    background-size:cover;
+    opacity:1;
+}

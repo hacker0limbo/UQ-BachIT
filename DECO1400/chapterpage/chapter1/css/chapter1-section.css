@@ -1,0 +1,3 @@
+.bottom-section .button:nth-child(2) h4::before {
+    content: '→';
+}

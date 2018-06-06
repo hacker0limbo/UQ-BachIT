@@ -1,0 +1,82 @@
+body {
+	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 1.5em;
+	color:#fff;
+}
+
+.playing {
+	color: #F8AB3E;
+	font-size: 16px;
+}
+
+.button-hide {
+	display: none;
+}
+
+.container{
+	text-align: center;
+	width:300px;
+	background:#333;
+	border-radius:10px;
+	border:#666 solid 2px;
+}
+
+.music-button{
+	text-align: center;
+}
+
+.pre-button, .next-button,
+.play-button,.pause-button {
+	width:40px;
+	height:40px;
+  /*border-radius:10px;*/
+}
+
+.pre-button, .next-button,
+.play-button,.pause-button:hover {
+	cursor: pointer;
+}
+
+.music-list {
+	text-align: center;
+	/*list-style-type: none;*/
+	padding:10px;
+	cursor: pointer;
+	margin:5px;
+	background:#666;
+}
+
+.music-time {
+	display:inline-block;
+	padding:3px;
+	/*background:#666;*/
+}
+
+.audio-block {
+	width: 100%;
+	/*z-index:1;*/
+	background: lightblue;
+	/*width: 100px;
+	height: 100px;*/
+	border-radius: 50%;
+	/*background:url(../img/music.png) no-repeat;*/
+}
+
+.audio-spin {
+	animation: infinite spin linear 10s;
+	/*animation-iteration-count: 1;*/
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.audio-circle:hover {
+	background-color: gray;
+}

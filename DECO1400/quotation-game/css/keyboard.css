@@ -1,0 +1,138 @@
+body {
+    font: normal 1em/1.4em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    vertical-align: baseline;
+    background-color: #2f343a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.animated-quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.quote {
+    font-family: 'Dancing Script', cursive;
+    font-weight: normal;
+    /* opacity: 0; */
+    color: #ef7126;
+}
+
+.animated {
+    animation: fadeInOut 1.8s;
+}
+
+/* animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.keyboard {
+    margin: 40px 0;
+    user-select: none;
+    width: 630px;
+}
+
+.keyboard .row {
+    position: relative;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.keyboard .row:nth-child(2) {
+    transform: translateX(2.5%);
+}
+
+.keyboard .row:nth-child(3) {
+    margin-left: 9%;
+    margin-right: 5%;
+}
+
+.key,.space {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+    width: 49px;
+    height: 49px;
+    border: 2px solid #717d8c;
+    border-radius: 6px;
+    transition: all .08s ease-in-out;
+}
+
+.key.none-highlight {
+    color: #717d8c;
+}
+
+/* for javascript, each time press the key, have the same
+effect of the hover
+ */
+.highlight {
+    color: #ef7126;
+    border-color: #ef7126;
+}
+
+.not-highlight {
+    border-color: #a6a6a6;
+}
+
+/*  */
+.key:hover {
+    color: #ef7126;
+    border-color: #ef7126;
+}
+
+.key.none-highlight:hover {
+    color: #a6a6a6;
+    border-color: #a6a6a6;
+}
+
+.space {
+    width: 49%;
+    margin-left: 27.5%;
+}
+
+.space:hover {
+    color: #ef7126;
+    border-color: #ef7126;
+}
+
+
+
+b,span {
+    display: flex;
+    align-items: center;
+    flex: 2;
+}
+
+
+b {
+    font-family: "Titillium Web";
+    flex: 1;
+    font-size: 8px;
+}
+
+green {
+    color: #8edc9d;
+}
+
+article {
+    margin-top: 1em;
+}

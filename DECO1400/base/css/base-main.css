@@ -1,0 +1,63 @@
+/* All the basic css style of tags, should be linked to each html page */
+
+/* homepage.html */
+/*  */
+
+section, footer {
+    padding: 0 2em;
+}
+
+section, nav, footer, .game {
+    margin-top: 0.5em;
+    border-radius: 10px;
+    border: 2px solid grey;
+}
+
+a {
+    font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #f40000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Garamond, sans-serif;
+}
+
+p {
+    font-family: serif;
+    font-size: 15pt;
+}
+
+/* fonts */
+/* homepage */
+@font-face {
+    font-family: 'Shadows Into Light';
+    src: url('../../fonts/ShadowsIntoLight.ttf');
+}
+
+/* keyboard */
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../../fonts/DancingScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Josefin Slab';
+    src: url('../../fonts/JosefinSlab-Regular.ttf');
+}
+
+iframe {
+    border: 0;
+    overflow: hidden;
+}
+/* css color variable */
+
+
+
+
+
+/*  */

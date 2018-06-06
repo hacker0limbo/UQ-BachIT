@@ -1,0 +1,30 @@
+.bottom-section .button:nth-child(1) h4::before {
+    content: '←';
+}
+
+
+.bottom-section .button:nth-child(2) h4::before {
+    content: '→';
+}
+
+/* section-left */
+.section-left {
+    width: 50%;
+    margin-right: 2em;
+}
+
+.section-left iframe {
+    margin-top: 0.7em;
+}
+
+/* section-right */
+.section-right {
+    width: 50%;
+}
+
+.main-section p {
+    margin: 0;
+    padding: 0;
+    font-size: 15pt;
+    font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
+}
