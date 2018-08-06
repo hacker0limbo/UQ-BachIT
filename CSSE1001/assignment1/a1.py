@@ -47,34 +47,37 @@ def translate_text(target_str: str, base_str: str, shift_str: str) -> str:
     return target_str.translate(template)
 
 
-def generate_shifted_ascii(offset: int, is_reversed=False) -> str:
+def generate_shifted_ascii(offset: int) -> str:
     """ (str) Returns the shifted ascii str based on the offset
 
     Parameter:
         offset (int): the shift number
-        reversed (bool): if the final result should be reversed
     """
-    reversed_switch = 1
-    if is_reversed:
-        reversed_switch = -1
-    lowercase_ascii = generate_ascii_lowercase()[::reversed_switch]
-    uppercase_ascii = generate_ascii_uppercase()[::reversed_switch]
+    lowercase_ascii = generate_ascii_lowercase()
+    uppercase_ascii = generate_ascii_uppercase()
     shifted_lowercase_ascii = lowercase_ascii[offset:] + lowercase_ascii[:offset]
     shifted_uppercase_ascii = uppercase_ascii[offset:] + uppercase_ascii[:offset]
     shifted_ascii = shifted_lowercase_ascii + shifted_uppercase_ascii
     return shifted_ascii
 
 
-def cypher(text: str, ascii_text, offset: int, is_decrypt=True) -> str:
+def cypher(text: str, offset: int) -> str:
+    """ (str) Returns the cyphered text
+
+    Parameter:
+        text (int): the input text needed to be cyphered
+        offset (int): the number of shift of each letter, between 1 and 25, inclusive
+    """
+    ascii_text = generate_ascii()
     original_text = text[:]
     cyphertext = ''
     for each_offset in range(1, 26):
         if offset == 0:
-            shifted_ascii = generate_shifted_ascii(each_offset, is_decrypt)
+            shifted_ascii = generate_shifted_ascii(each_offset)
             cyphertext += f'\n{each_offset:0=2d}: ' + translate_text(original_text, ascii_text,
                                                                      shifted_ascii)
         else:
-            shifted_ascii = generate_shifted_ascii(offset, is_decrypt)
+            shifted_ascii = generate_shifted_ascii(offset)
             cyphertext += translate_text(original_text, ascii_text, shifted_ascii)
             break
     return cyphertext
@@ -87,8 +90,7 @@ def encrypt(text: str, offset: int) -> str:
         text (int): the input text needed to be encrypted
         offset (int): the number of shift of each letter, between 1 and 25, inclusive
     """
-    ascii_text = generate_ascii()
-    encrypted_text = cypher(text, ascii_text, offset, False)
+    encrypted_text = cypher(text, offset)
     return encrypted_text
 
 
@@ -99,8 +101,7 @@ def decrypt(text: str, offset: int) -> str:
         text (int): the input text needed to be decrypt
         offset (int): the number of shift of each letter, between 1 and 25, inclusive
     """
-    reversed_ascii_text = generate_ascii_lowercase()[::-1] + generate_ascii_uppercase()[::-1]
-    decrypted_text = cypher(text, reversed_ascii_text, offset, True)
+    decrypted_text = cypher(text, -offset)
     return decrypted_text
 
 
