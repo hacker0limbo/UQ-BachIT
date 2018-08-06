@@ -47,4 +47,3 @@ def is_numeric(value):
         return False
 
 
-

@@ -10,8 +10,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/assignment1$Doctest_is_word_english.coverage" NAME="Doctest is_word_english Coverage Results" MODIFIED="1533537004894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/assignment1$a1.coverage" NAME="a1 Coverage Results" MODIFIED="1533544207085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/assignment1$Doctest_is_word_english.coverage" NAME="Doctest is_word_english Coverage Results" MODIFIED="1533552686799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/assignment1$a1.coverage" NAME="a1 Coverage Results" MODIFIED="1533551826418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/assignment1$Doctests_in_a1_support.coverage" NAME="Doctests in a1_support Coverage Results" MODIFIED="1533525997996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -36,20 +36,11 @@
       <file leaf-file-name="a1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/a1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2874">
-              <caret line="128" column="7" lean-forward="true" selection-start-line="128" selection-start-column="7" selection-end-line="128" selection-end-column="7" />
+            <state relative-caret-position="243">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding>
                 <element signature="e#76#86#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="a1_support.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a1_support.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -65,9 +56,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/a1_support.py" />
         <option value="$PROJECT_DIR$/words.txt" />
         <option value="$PROJECT_DIR$/a1.py" />
+        <option value="$PROJECT_DIR$/a1_support.py" />
       </list>
     </option>
   </component>
@@ -87,8 +78,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="229" />
-    <option name="y" value="32" />
+    <option name="x" value="152" />
+    <option name="y" value="35" />
     <option name="width" value="1239" />
     <option name="height" value="777" />
   </component>
@@ -97,6 +88,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -108,7 +100,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -130,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.a1">
+  <component name="RunManager" selected="Python测试.Doctest is_word_english">
     <configuration name="a1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="assignment1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -193,8 +184,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.a1" />
         <item itemvalue="Python测试.Doctest is_word_english" />
+        <item itemvalue="Python.a1" />
         <item itemvalue="Python测试.Doctests in a1_support" />
       </list>
     </recent_temporary>
@@ -240,6 +231,9 @@
     <history-entry file="Doctest_is_word_english - 2018.08.06 at 16h 30m 05s.xml">
       <configuration name="Doctest is_word_english" configurationId="tests" />
     </history-entry>
+    <history-entry file="Doctest_is_word_english - 2018.08.06 at 20h 51m 27s.xml">
+      <configuration name="Doctest is_word_english" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -251,20 +245,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="147" y="23" width="1239" height="777" extended-state="0" />
+    <frame x="152" y="35" width="1239" height="777" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32724506" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32868218" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.304414" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27549466" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32868218" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5401786" weight="0.2556391" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5401786" visible="true" weight="0.2556391" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3291815" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3291815" />
-      <window_info id="Structure" order="1" sideWeight="0.45982143" side_tool="true" weight="0.25355873" />
+      <window_info id="Structure" order="1" sideWeight="0.45982143" side_tool="true" weight="0.2982456" />
       <window_info id="Favorites" order="2" sideWeight="0.5011547" side_tool="true" weight="0.25355873" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -283,6 +278,33 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1771">
+          <caret line="79" column="21" lean-forward="true" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+          <folding>
+            <element signature="e#76#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2944">
+          <caret line="128" column="7" lean-forward="true" selection-start-line="128" selection-start-column="7" selection-end-line="128" selection-end-column="7" />
+          <folding>
+            <element signature="e#76#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1_support.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/a1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4462">
@@ -343,15 +365,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/a1_support.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+        <state relative-caret-position="1035">
+          <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/a1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2874">
-          <caret line="128" column="7" lean-forward="true" selection-start-line="128" selection-start-column="7" selection-end-line="128" selection-end-column="7" />
+        <state relative-caret-position="243">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
           <folding>
             <element signature="e#76#86#0" expanded="true" />
           </folding>

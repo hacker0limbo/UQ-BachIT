@@ -5,7 +5,6 @@ CSSE1001/7030
 Semester 2, 2018
 """
 
-
 import sys
 import string
 from a1_support import is_word_english
@@ -48,81 +47,67 @@ def translate_text(target_str: str, base_str: str, shift_str: str) -> str:
     return target_str.translate(template)
 
 
-def generate_shifted_ascii(offset: int) -> str:
+def generate_shifted_ascii(offset: int, is_reversed=False) -> str:
     """ (str) Returns the shifted ascii str based on the offset
 
     Parameter:
         offset (int): the shift number
+        reversed (bool): if the final result should be reversed
     """
-    lowercase_ascii = generate_ascii_lowercase()
-    uppercase_ascii = generate_ascii_uppercase()
+    reversed_switch = 1
+    if is_reversed:
+        reversed_switch = -1
+    lowercase_ascii = generate_ascii_lowercase()[::reversed_switch]
+    uppercase_ascii = generate_ascii_uppercase()[::reversed_switch]
     shifted_lowercase_ascii = lowercase_ascii[offset:] + lowercase_ascii[:offset]
     shifted_uppercase_ascii = uppercase_ascii[offset:] + uppercase_ascii[:offset]
     shifted_ascii = shifted_lowercase_ascii + shifted_uppercase_ascii
     return shifted_ascii
 
 
-def generate_reversed_shifted_ascii(offset: int) -> str:
-    """ (str) Returns the reversed shifted ascii str based on the offset
-
-    Parameter:
-        offset (int): the shift number
-    """
-    lowercase_ascii = generate_ascii_lowercase()[::-1]
-    uppercase_ascii = generate_ascii_uppercase()[::-1]
-    shifted_lowercase_ascii = lowercase_ascii[offset:] + lowercase_ascii[:offset]
-    shifted_uppercase_ascii = uppercase_ascii[offset:] + uppercase_ascii[:offset]
-    shifted_ascii = shifted_uppercase_ascii + shifted_lowercase_ascii
-    return shifted_ascii
+def cypher(text: str, ascii_text, offset: int, is_decrypt=True) -> str:
+    original_text = text[:]
+    cyphertext = ''
+    for each_offset in range(1, 26):
+        if offset == 0:
+            shifted_ascii = generate_shifted_ascii(each_offset, is_decrypt)
+            cyphertext += f'\n{each_offset:0=2d}: ' + translate_text(original_text, ascii_text,
+                                                                     shifted_ascii)
+        else:
+            shifted_ascii = generate_shifted_ascii(offset, is_decrypt)
+            cyphertext += translate_text(original_text, ascii_text, shifted_ascii)
+            break
+    return cyphertext
 
 
 def encrypt(text: str, offset: int) -> str:
-    """ (str) Returns string that be encrypted, the order will be the alphabet order
+    """ (str) Returns the encrypted text
 
     Parameter:
-        text (int): the input text needed to be encryped, accepts both lower and upper and space
+        text (int): the input text needed to be encrypted
         offset (int): the number of shift of each letter, between 1 and 25, inclusive
     """
-    original_text = text[:]
     ascii_text = generate_ascii()
-    encrypted_text = ''
-    for each_offset in range(1, 26):
-        if offset == 0:
-            shifted_ascii = generate_shifted_ascii(each_offset)
-            encrypted_text += f'\n{each_offset:0=2d}: ' + translate_text(original_text, ascii_text,
-                                                                         shifted_ascii)
-        else:
-            shifted_ascii = generate_shifted_ascii(offset)
-            encrypted_text += translate_text(original_text, ascii_text, shifted_ascii)
-            break
+    encrypted_text = cypher(text, ascii_text, offset, False)
     return encrypted_text
 
 
 def decrypt(text: str, offset: int) -> str:
-    """ (str) Returns encrypted string that be decrypt, the order will be the reverese alphabet order
+    """ (str) Returns the decrypted text
 
     Parameter:
-        text (int): the input text needed to be decrypt, accepts both lower and upper and space
+        text (int): the input text needed to be decrypt
         offset (int): the number of shift of each letter, between 1 and 25, inclusive
     """
-    original_text = text[:]
-    reversed_ascii_text = generate_ascii()[::-1]
-    decrypted_text = ''
-    for each_offset in range(1, 26):
-        if offset == 0:
-            reversed_shifted_ascii = generate_reversed_shifted_ascii(each_offset)
-            decrypted_text += f'\n{each_offset:0=2d}: ' + translate_text(original_text, reversed_ascii_text,
-                                                                         reversed_shifted_ascii)
-        else:
-            reversed_shifted_ascii = generate_reversed_shifted_ascii(offset)
-            decrypted_text += translate_text(original_text, reversed_ascii_text, reversed_shifted_ascii)
-            break
+    reversed_ascii_text = generate_ascii_lowercase()[::-1] + generate_ascii_uppercase()[::-1]
+    decrypted_text = cypher(text, reversed_ascii_text, offset, True)
     return decrypted_text
 
 
 def find_encryption_offsets(encrypted_text: str) -> tuple:
-    """ (tuple) Returns the offset that could make encrypted_text decrypted to a english text
-                if no such offset, nothing will be append to the turple
+    """ (tuple) Returns the offset
+        which could make encrypted_text decrypted to a english text
+        if no such offset, nothing will be append to the turple
 
     Parameter:
         encrypted_text (int): the input text that was encrypted
@@ -139,10 +124,10 @@ def find_encryption_offsets(encrypted_text: str) -> tuple:
 
 def question_e():
     """ (Void) The function will
-    show question e content to ask question and show relative answer when user input 'e'
+    show question a content and show relative result
 
     Parameter:
-        (void) No parameter, only do stuff
+        (void) No parameter, only process question
     """
     text_to_encrypt = input('Please enter some text to encrypt: ')
     offset = int(input('Please enter a shift offset (1-25): '))
@@ -152,10 +137,10 @@ def question_e():
 
 def question_d():
     """ (Void) The function will
-    show question d content to ask question and show relative answer when user input 'd'
+    show question a content and show relative result
 
     Parameter:
-        (void) No parameter, only do stuff
+        (void) No parameter, only process question
     """
     text_to_encrypt = input('Please enter some text to decrypt: ')
     offset = int(input('Please enter a shift offset (1-25): '))
@@ -165,17 +150,16 @@ def question_d():
 
 def question_a():
     """ (Void) The function will
-    show question a content to ask question and show relative answer when user input 'a'
+    show question a content and show relative result
 
     Parameter:
-        (void) No parameter, only do stuff
+        (void) No parameter, only process question
     """
     result = ''
     encrypted_text = input('Please enter some encrypted text: ')
     offsets = find_encryption_offsets(encrypted_text)
     if len(offsets) == 1:
-        result += f"""
-Encryption offset: {''.join(str(offsets[0]))}
+        result += f"""Encryption offset: {''.join(str(offsets[0]))}
 Decrypted message: {decrypt(encrypted_text, offsets[0])}"""
     elif len(offsets) > 1:
         result += f"Multiple encryption offsets: {', '.join(map(str, offsets))}"
@@ -185,11 +169,11 @@ Decrypted message: {decrypt(encrypted_text, offsets[0])}"""
 
 
 def question_q():
-    """ (void) The function will end the program
-    Parameter:
-        (void)
-    """
+    """ (void) end the program
 
+    Parameter:
+        (void) No parameter, only process question
+    """
     print('Bye!')
     sys.exit()
 
