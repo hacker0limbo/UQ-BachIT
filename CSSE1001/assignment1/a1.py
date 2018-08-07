@@ -160,10 +160,13 @@ def question_a():
     encrypted_text = input('Please enter some encrypted text: ')
     offsets = find_encryption_offsets(encrypted_text)
     if len(offsets) == 1:
-        result += f"""Encryption offset: {''.join(str(offsets[0]))}
-Decrypted message: {decrypt(encrypted_text, offsets[0])}"""
+        encryption_offset = ''.join(str(offsets[0]))
+        decrypted_message = decrypt(encrypted_text, offsets[0])
+        result += f'Encryption offset: {encryption_offset}\n' \
+                  + f'Decrypted message: {decrypted_message}'
     elif len(offsets) > 1:
-        result += f"Multiple encryption offsets: {', '.join(map(str, offsets))}"
+        multi_encryption_offsets = ', '.join(map(str, offsets))
+        result += f"Multiple encryption offsets: {multi_encryption_offsets}"
     else:
         result += 'No valid encryption offset'
     print(result)
@@ -184,12 +187,12 @@ def show_question():
     Parameter:
         (void)
     """
-    question = """Please choose an option [e/d/a/q]:
-e) Encrypt some text
-d) Decrypt some text
-a) Automatically decrypt English text
-q) Quit
->"""
+    question = 'Please choose an option [e/d/a/q]:\n' \
+               + 'e) Encrypt some text\n' \
+               + 'd) Decrypt some text\n' \
+               + 'a) Automatically decrypt English text\n' \
+               + 'q) Quit\n' \
+               + '>'
     user_option = input(question.rstrip() + ' ')
     return user_option
 
