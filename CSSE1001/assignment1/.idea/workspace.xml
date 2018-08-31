@@ -11,8 +11,11 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/assignment1$Doctest_is_word_english.coverage" NAME="Doctest is_word_english Coverage Results" MODIFIED="1533552686799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/assignment1$a1.coverage" NAME="a1 Coverage Results" MODIFIED="1533551826418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/assignment1$Doctests_in_a1_support.coverage" NAME="Doctests in a1_support Coverage Results" MODIFIED="1533525997996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/assignment1$Unittests_in_test_a1_sample_py.coverage" NAME="Unittests in test_a1_sample.py Coverage Results" MODIFIED="1535021744893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/assignment1$Unittests_for_test_a1_sample_TestDesign.coverage" NAME="Unittests for test_a1_sample.TestDesign Coverage Results" MODIFIED="1534735431744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/assignment1$a1.coverage" NAME="a1 Coverage Results" MODIFIED="1535021493001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/assignment1$Doctests_in_a1_support.coverage" NAME="Doctests in a1_support Coverage Results" MODIFIED="1534067873381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/assignment1$Doctests_in_a1_support__1_.coverage" NAME="Doctests in a1_support (1) Coverage Results" MODIFIED="1534067857944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -36,10 +39,10 @@
       <file leaf-file-name="a1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/a1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="3700">
+              <caret line="174" selection-start-line="174" selection-end-line="174" />
               <folding>
-                <element signature="e#76#86#0" expanded="true" />
+                <element signature="e#76#89#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,14 +54,16 @@
     <findStrings>
       <find>join</find>
       <find>good</find>
+      <find>ve</find>
+      <find>re</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/words.txt" />
-        <option value="$PROJECT_DIR$/a1.py" />
         <option value="$PROJECT_DIR$/a1_support.py" />
+        <option value="$PROJECT_DIR$/a1.py" />
       </list>
     </option>
   </component>
@@ -78,8 +83,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="152" />
-    <option name="y" value="35" />
+    <option name="x" value="135" />
+    <option name="y" value="23" />
     <option name="width" value="1239" />
     <option name="height" value="777" />
   </component>
@@ -88,7 +93,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -96,10 +100,16 @@
               <item name="assignment1" type="b2602c69:ProjectViewProjectNode" />
               <item name="assignment1" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="assignment1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assignment1" type="462c0819:PsiDirectoryNode" />
+              <item name="data_files" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -121,7 +131,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python测试.Doctest is_word_english">
+  <component name="RunManager" selected="Python tests.Unittests in test_a1_sample.py">
     <configuration name="a1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="assignment1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,25 +151,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Doctest is_word_english" type="tests" factoryName="文档测试" temporary="true" nameIsGenerated="true">
-      <module name="assignment1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/a1_support.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="is_word_english" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_FUNCTION" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-    </configuration>
-    <configuration name="Doctests in a1_support" type="tests" factoryName="文档测试" temporary="true" nameIsGenerated="true">
+    <configuration name="Doctests in a1_support (1)" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <module name="assignment1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -177,16 +169,66 @@
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
     </configuration>
+    <configuration name="Doctests in a1_support" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <module name="assignment1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/a1_support.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+    </configuration>
+    <configuration name="Unittests for test_a1_sample.TestDesign" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="assignment1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_a1_sample.TestDesign&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests in test_a1_sample.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="assignment1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_a1_sample.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
     <list>
-      <item itemvalue="Python测试.Doctest is_word_english" />
       <item itemvalue="Python.a1" />
-      <item itemvalue="Python测试.Doctests in a1_support" />
+      <item itemvalue="Python tests.Doctests in a1_support" />
+      <item itemvalue="Python tests.Doctests in a1_support (1)" />
+      <item itemvalue="Python tests.Unittests in test_a1_sample.py" />
+      <item itemvalue="Python tests.Unittests for test_a1_sample.TestDesign" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python测试.Doctest is_word_english" />
+        <item itemvalue="Python tests.Unittests in test_a1_sample.py" />
         <item itemvalue="Python.a1" />
-        <item itemvalue="Python测试.Doctests in a1_support" />
+        <item itemvalue="Python tests.Unittests for test_a1_sample.TestDesign" />
+        <item itemvalue="Python tests.Doctests in a1_support" />
+        <item itemvalue="Python tests.Doctests in a1_support (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -207,32 +249,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Doctest_is_word_english - 2018.08.04 at 20h 41m 10s.xml">
-      <configuration name="Doctest is_word_english" configurationId="tests" />
+    <history-entry file="Unittests_in_test_a1_sample_py - 2018.08.20 at 20h 15m 05s.xml">
+      <configuration name="Unittests in test_a1_sample.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_is_word_english - 2018.08.04 at 21h 39m 15s.xml">
-      <configuration name="Doctest is_word_english" configurationId="tests" />
+    <history-entry file="Unittests_in_test_a1_sample_py - 2018.08.20 at 20h 15m 08s.xml">
+      <configuration name="Unittests in test_a1_sample.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_is_word_english - 2018.08.04 at 21h 39m 18s.xml">
-      <configuration name="Doctest is_word_english" configurationId="tests" />
+    <history-entry file="Unittests_in_test_a1_sample_py - 2018.08.23 at 20h 40m 54s.xml">
+      <configuration name="Unittests in test_a1_sample.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_is_word_english - 2018.08.04 at 21h 39m 23s.xml">
-      <configuration name="Doctest is_word_english" configurationId="tests" />
+    <history-entry file="Unittests_in_test_a1_sample_py - 2018.08.23 at 20h 43m 30s.xml">
+      <configuration name="Unittests in test_a1_sample.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_is_word_english - 2018.08.04 at 21h 39m 33s.xml">
-      <configuration name="Doctest is_word_english" configurationId="tests" />
+    <history-entry file="Unittests_in_test_a1_sample_py - 2018.08.23 at 20h 47m 52s.xml">
+      <configuration name="Unittests in test_a1_sample.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_a1_support - 2018.08.06 at 13h 26m 21s.xml">
-      <configuration name="Doctests in a1_support" configurationId="tests" />
+    <history-entry file="Unittests_in_test_a1_sample_py - 2018.08.23 at 20h 51m 47s.xml">
+      <configuration name="Unittests in test_a1_sample.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_a1_support - 2018.08.06 at 13h 26m 38s.xml">
-      <configuration name="Doctests in a1_support" configurationId="tests" />
+    <history-entry file="Unittests_in_test_a1_sample_py - 2018.08.23 at 20h 53m 04s.xml">
+      <configuration name="Unittests in test_a1_sample.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_is_word_english - 2018.08.06 at 16h 30m 05s.xml">
-      <configuration name="Doctest is_word_english" configurationId="tests" />
+    <history-entry file="Unittests_in_test_a1_sample_py - 2018.08.23 at 20h 53m 09s.xml">
+      <configuration name="Unittests in test_a1_sample.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_is_word_english - 2018.08.06 at 20h 51m 27s.xml">
-      <configuration name="Doctest is_word_english" configurationId="tests" />
+    <history-entry file="Unittests_in_test_a1_sample_py - 2018.08.23 at 20h 54m 00s.xml">
+      <configuration name="Unittests in test_a1_sample.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_a1_sample_py - 2018.08.23 at 20h 55m 45s.xml">
+      <configuration name="Unittests in test_a1_sample.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -245,7 +290,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="152" y="35" width="1239" height="777" extended-state="0" />
+    <frame x="135" y="23" width="1239" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32724506" />
@@ -253,13 +298,13 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32868218" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27549466" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28614917" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32868218" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5401786" visible="true" weight="0.2556391" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6473029" weight="0.25814536" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3291815" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3291815" />
-      <window_info id="Structure" order="1" sideWeight="0.45982143" side_tool="true" weight="0.2982456" />
+      <window_info id="Structure" order="1" sideWeight="0.3526971" side_tool="true" weight="0.24143693" />
       <window_info id="Favorites" order="2" sideWeight="0.5011547" side_tool="true" weight="0.25355873" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -277,14 +322,172 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4002">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+          <folding>
+            <element signature="e#76#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2254">
+          <caret line="98" column="4" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
+          <folding>
+            <element signature="e#76#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5865">
+          <caret line="255" column="14" lean-forward="true" selection-start-line="255" selection-start-column="14" selection-end-line="255" selection-end-column="14" />
+          <folding>
+            <element signature="e#76#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2024">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="e#76#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2438">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+          <folding>
+            <element signature="e#76#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2208">
+          <caret line="96" column="4" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
+          <folding>
+            <element signature="e#76#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4278">
+          <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
+          <folding>
+            <element signature="e#76#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5244">
+          <caret line="228" column="11" lean-forward="true" selection-start-line="228" selection-start-column="11" selection-end-line="228" selection-end-column="11" />
+          <folding>
+            <element signature="e#76#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#76#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1863">
+          <caret line="81" column="22" lean-forward="true" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+          <folding>
+            <element signature="e#76#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1_support.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4623">
+          <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1_support.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1_support.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2001">
+          <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/a1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1771">
           <caret line="79" column="21" lean-forward="true" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
-          <folding>
-            <element signature="e#76#86#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -292,9 +495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2944">
           <caret line="128" column="7" lean-forward="true" selection-start-line="128" selection-start-column="7" selection-end-line="128" selection-end-column="7" />
-          <folding>
-            <element signature="e#76#86#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -309,9 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4462">
           <caret line="194" column="15" lean-forward="true" selection-start-line="194" selection-start-column="15" selection-end-line="194" selection-end-column="15" />
-          <folding>
-            <element signature="e#76#86#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -326,9 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1840">
           <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="e#76#86#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -343,9 +537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#76#86#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -356,26 +547,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.conda/envs/python_test/lib/python3.6/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/words.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="99737" column="4" selection-start-line="99737" selection-end-line="99737" selection-end-column="4" />
+        <state relative-caret-position="142">
+          <caret line="101195" column="3" selection-start-line="101195" selection-start-column="1" selection-end-line="101195" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/example_extension_output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="75" lean-forward="true" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/example_extension_inputs.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/example_extension_output_2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/example_inputs.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/example_output.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a1_original.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1311" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testrunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/a1_support.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+        <state relative-caret-position="280">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/example_extension_inputs_2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_a1_sample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/a1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        <state relative-caret-position="3700">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
           <folding>
-            <element signature="e#76#86#0" expanded="true" />
+            <element signature="e#76#89#0" expanded="true" />
           </folding>
         </state>
       </provider>

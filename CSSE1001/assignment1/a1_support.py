@@ -37,6 +37,7 @@ def is_word_english(word):
     """
     return _is_word_english(word)
 
+
 def is_numeric(value):
     """(bool) Returns True iff 'value' is numeric"""
 
@@ -45,5 +46,4 @@ def is_numeric(value):
         return True
     except:
         return False
-
 
