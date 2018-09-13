@@ -64,6 +64,10 @@ const storeData = (key, data) => {
     window.localStorage.setItem(key, JSON.stringify(records))
 }
 
+
+/**
+ * using promise to get data
+ */
 const getData = () => {
     mineDataFromSLQ()
         .then((data) => {
@@ -79,6 +83,21 @@ const getData = () => {
         })
 }
 
+
+/**
+ * using async & await to get data
+ */
+const getDataAsync = async() => {
+    mineData = await mineDataFromSLQ()
+    convictData = await convictDataFromSLQ()
+    warData = await warDataFromSLQ()
+    console.log(mineData, convictData, warData);
+}
+
+
+/**
+ * test if they have been stored in local
+ */
 const testLocalStorage = () => {
     // only for the test
     mineData = window.localStorage.getItem('mine')
@@ -92,9 +111,15 @@ const testLocalStorage = () => {
     console.log(d);
 }
 
+
+/**
+ * init entrence
+ */
 const __main = () => {
     getData()
-        // testLocalStorage()
+    getDataAsync()
+
+    // testLocalStorage()
 }
 
 __main()
