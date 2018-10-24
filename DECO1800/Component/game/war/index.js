@@ -4,6 +4,7 @@ function preload() {
 
     game.load.image('phaser', 'assets/soldier.png');
     game.load.image('bullet', 'assets/bullet.png');
+    game.load.image('background', 'assets/desert.png');
     game.load.spritesheet('veggies', 'assets/war.png', 32, 32);
 
 }
@@ -12,14 +13,16 @@ var sprite;
 var bullets;
 var veggies;
 var cursors;
+// var background
 
 var bulletTime = 0;
 var bullet;
 
 function create() {
 
-    game.stage.backgroundColor = '#2d2d2d';
+    game.add.sprite(0, 0, 'background');
 
+    game.stage.backgroundColor = '#2d2d2d';
     //  This will check Group vs. Group collision (bullets vs. veggies!)
 
     veggies = game.add.group();
@@ -99,5 +102,5 @@ function collisionHandler(bullet, veg) {
 
     bullet.kill();
     veg.kill();
-
+    console.log('killed');
 }
