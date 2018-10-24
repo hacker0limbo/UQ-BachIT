@@ -1,9 +1,10 @@
 const warDataFromLocal = (name) => {
     warData = window.localStorage.getItem(name)
     data = JSON.parse(warData)
-    console.log(data);
+    console.log('war', data);
     return data
 }
+
 
 data = warDataFromLocal('war')
 

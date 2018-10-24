@@ -1,5 +1,4 @@
-const j = jQuery
-const e = (elem) => document.querySelector(elem)
+const e = jQuery
 
 const mineDataFromSLQ = () => {
     const data = {
@@ -7,7 +6,7 @@ const mineDataFromSLQ = () => {
         limit: 100,
     }
     return new Promise((resolve, reject) => {
-        j.ajax({
+        e.ajax({
             url: 'https://data.gov.au/api/3/action/datastore_search',
             data: data,
             dataType: 'jsonp',
@@ -26,7 +25,7 @@ const convictDataFromSLQ = () => {
         limit: 100,
     }
     return new Promise((resolve, reject) => {
-        j.ajax({
+        e.ajax({
             url: 'https://data.gov.au/api/3/action/datastore_search',
             data: data,
             dataType: 'jsonp',
@@ -46,7 +45,7 @@ const warDataFromSLQ = () => {
         limit: 100,
     }
     return new Promise((resolve, reject) => {
-        j.ajax({
+        e.ajax({
             url: 'https://data.gov.au/api/3/action/datastore_search',
             data: data,
             dataType: 'jsonp',
@@ -113,7 +112,6 @@ const testLocalStorage = () => {
 }
 
 
-
 /**
  * init entrence
  */
@@ -125,20 +123,3 @@ const __main = () => {
 }
 
 __main()
-
-
-
-
-var data = {
-    resource_id: '5bc00f98-2d96-47d6-a0ca-2089ebd1130d', // the resource id
-    limit: 5, // get 5 results
-    q: 'jones' // query for 'jones'
-};
-$.ajax({
-    url: 'https://data.gov.au/api/3/action/datastore_search',
-    data: data,
-    dataType: 'jsonp',
-    success: function(data) {
-        alert('Total results found: ' + data.result.total)
-    }
-});
