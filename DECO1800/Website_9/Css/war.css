@@ -1,0 +1,102 @@
+d.hard {
+    font-size: 18pt;
+    color: black;
+}
+
+.hard h1 {
+    margin-left: 1em;
+    margin-bottom: 4em;
+}
+
+
+/* signature */
+
+#dex-sign {
+    display: block;
+    float: right;
+    margin: 30px 10px 15px 10px;
+    width: 255px;
+    height: 84px;
+    background: url(http://drygiel.com/projects/sign/frames.png) no-repeat;
+}
+
+#dex-sign.white {
+    background-image: url(http://drygiel.com/projects/sign/frames-255-white.png);
+}
+
+#dex-sign.play {
+    -moz-animation: sign-anim 3.5s 0.2s steps(85) forwards;
+    -o-animation: sign-anim 3.5s 0.2s steps(85) forwards;
+    -webkit-animation: sign-anim 3.5s 0.2s steps(85) forwards;
+    animation: sign-anim 3.5s 0.2s steps(85) forwards;
+}
+
+a#dex-sign {
+    opacity: 0.9;
+}
+
+a#dex-sign:hover {
+    opacity: 1;
+    -webkit-filter: invert(30%) brightness(80%) sepia(100%) contrast(110%) saturate(953%) hue-rotate(165deg);
+}
+
+@-webkit-keyframes sign-anim {
+    to {
+        background-position: 0 -7140px;
+    }
+}
+
+@-moz-keyframes sign-anim {
+    to {
+        background-position: 0 -7140px;
+    }
+}
+
+@keyframes sign-anim {
+    to {
+        background-position: 0 -7140px;
+    }
+}
+
+
+/* book */
+
+.single-p {
+    padding: 0.5em;
+    color: black;
+    font-size: 12pt;
+}
+
+.single-p h3 {
+    color: brown;
+}
+
+.single-p .portrait {
+    margin-right: 1em;
+    float: left;
+}
+
+#last-page {
+    padding: 0.6em;
+}
+
+#W_articles_container {
+    margin-bottom: 5vh;
+}
+
+#phaser-war-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vw;
+}
+
+#phaser-war-game .instruction {
+    font-size: 16pt;
+}
+
+#phaser-war-game h1 {
+    font-size: 28pt;
+    color: brown;
+}
