@@ -1,0 +1,334 @@
+<html>
+
+<head>
+    <!--CSS -->
+    <link rel="stylesheet" type="text/css" href="Css/style.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!-- hover -->
+    <link rel="stylesheet" href="./lib/hover-min.css">
+
+    <!-- scripts -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- light box -->
+    <link rel="stylesheet" href="./lib/strip.css">
+    <script src="./lib/strip.pkgd.min.js"></script>
+
+    <!-- flip -->
+    <script src="js/turn.min.js"></script>
+
+    <!-- data -->
+    <script src="js/data.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- typed.js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script> -->
+
+    <!-- phaser game -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser-ce/2.11.0/phaser.min.js"></script>
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet">
+</head>
+
+<body>
+    <div class="pure-container" data-effect="pure-effect-slide">
+        <input type="checkbox" id="pure-toggle-left" class="pure-toggle" data-toggle="left">
+        <label class="pure-toggle-label" for="pure-toggle-left" data-toggle-label="left">
+            <span class="pure-toggle-icon"></span>
+        </label>
+
+        <div class="pure-drawer" data-position="left">
+            <!-- put the navigation content here -->
+            <div class="nav-btns">
+                <div class="hvr-underline-reveal">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                </div>
+                <div class="hvr-underline-reveal">
+                    <a href="Convicts_article.html">
+                        <li>Convicts</li>
+                    </a>
+                </div>
+                <div class="hvr-underline-reveal">
+                    <a href="Goldrush_article.html">
+                        <li>Goldrush</li>
+                    </a>
+                </div>
+                <div class="hvr-underline-reveal">
+                    <a href="War_article.html">
+                        <li>WWI</li>
+                    </a>
+                </div>
+                <div class="hvr-underline-reveal">
+                    <a href="Summary_Page.html">
+                        <li>Summary</li>
+                    </a>
+                </div>
+                <div class="hvr-underline-reveal">
+                    <a href="About_Us.html">
+                        <li>About Us</li>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pure-pusher-container">
+            <div class="pure-pusher">
+                <section id="timeline">
+                    <div class='container'>
+                        <div class="icon">
+                            <img src="./img/boat_2.png" class="hvr-bounce-in" id="boat">
+                            <img src="./img/gold_2.png " class="hvr-bob" id="gold">
+                            <img src="./img/helmet.png " class="hvr-wobble-skew" id="helmet">
+                            <img src="./img/city_2.png " class="hvr-grow-rotate" id="city">
+                        </div>
+                        <div class='timeline'>
+                            <div class='start'></div>
+                        </div>
+                        <div class='entries'>
+                            <div class='entry project'>
+                                <a href="Convicts_article.html">
+                                    <div class='dot'></div>
+                                </a>
+                                <div class='label'>
+                                    <div class='time'>
+                                        1787 &#8212
+                                    </div>
+                                    <div class='detail'>
+                                        Convicts
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='entry study'>
+                                <a href="Goldrush_article.html">
+                                    <div class='dot'></div>
+                                </a>
+                                <div class='label'>
+                                    <div class='time'>
+                                        1850 &#8212
+                                    </div>
+                                    <div class='detail'>
+                                        Gold Rush
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='entry project'>
+                                <a href="War_article.html">
+                                    <div class='dot'></div>
+                                </a>
+                                <div class='label'>
+                                    <div class='time'>
+                                        1914 &#8212 1918
+                                    </div>
+                                    <div class='detail'>
+                                        World War I
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='entry life'>
+                                <a href="Summary_Page.html">
+                                    <div class='dot'></div>
+                                </a>
+                                <div class='label'>
+                                    <div class='time'>
+                                        2018
+                                    </div>
+                                    <div class='detail'>
+                                        Summary
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <header id="header">
+
+                    <img src="img/banner.png" id="banner">
+                    <img src="img/Header_Text_3.png" id="Header_Text">
+                    <h3>
+                        World War 1 1914-1918
+                    </h3>
+                    <section id="links">
+                        <a href="About_Us.html">About Us</a>
+                    </section>
+
+                </header>
+
+                <section id="flipbook">
+                    <!-- flip goes here -->
+                    <flip id="article_flip">
+                        <div class="flipbook-viewport">
+                            <div class="con">
+                                <div class="flipbook">
+
+                                    <div class="hard">
+                                        <h1 class="hvr-grow-rotate">A book about Soldiers Details</h1>
+                                        <a id="dex-sign" class="play" href="http://drygiel.com" target="_blank"></a>
+                                    </div>
+
+                                    <div class="single-p"></div>
+                                    <div class="single-p"></div>
+                                    <div class="single-p"></div>
+                                    <div class="single-p"></div>
+                                    <div class="single-p"></div>
+
+
+                                    <div class="hard" id="last-page">
+                                        <h1 class="hvr-grow-rotate">End</h1>
+
+
+                                        <p class="animated rollIn delay-1s hvr-shrink">
+                                            Quote: <br><br> Soldiers usually win the battles and generals get the credit for them.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </flip>
+                </section>
+                <section id="W_articles_container">
+                    <section id="article_1">
+                        <section class="headline">
+                            Life in the trenches
+                        </section>
+                        <iframe src="https://giphy.com/embed/kKc8zEIHYEqXK" width=250vw; height=250vw; frameBorder="0" allowFullScreen></iframe>
+                            <p>
+                                In early 1916, life in the trenches was considered more comfortable by many Australian troops. For those who had served on Gallipoli, the conditions on the Western Front seemed very different. Billets were within 2 kilometres of the front. There were army canteens selling groceries, tobacco and clothing, and the men could buy champagne and beer from the closest estaminet.
+                            </p>
+                        <button id="Read_More_btn" class="hvr-curl-bottom-right">Read Entire Article</button>
+                    </section>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h1>
+                                    Life in the trenches
+                                </h1>
+                                <section class="main_text">
+                                    <p>
+                                        In early 1916, life in the trenches was considered more comfortable by many Australian troops. For those who had served on Gallipoli, the conditions on the Western Front seemed very different. Billets were within 2 kilometres of the front. There were army canteens selling groceries, tobacco and clothing, and the men could buy champagne and beer from the closest estaminet.
+                                    </p>
+                                    <p>
+                                        This would all change with the arrival of winter, the most severe experienced in northern France in 36 years. Thoroughly churned up by the bombardment of the first battle of the Somme, the ground became so waterlogged it turned into a quagmire that was
+                                        almost impassable. The rains that fell throughout October and November were followed by almost continuous frost and snow, which aggravated the unpleasant living conditions nearer the front.
+                                    </p>
+                                </section>
+                            </div>
+                        </div>
+                    <section id="article_2">
+                        <section class="headline">
+                            Life as a Soldier
+                        </section>
+                        <iframe src="https://giphy.com/embed/3og0ISQx9U3HNywJW0" width="280vw" height="300vw" frameBorder="0" allowFullScreen></iframe>
+                            <p>
+                                Every single one of the 65 million men mobilised to fight in the First World War had to be trained before being sent into battle. What was training like? It is hard to generalise. 
+                            </p>
+                            <p>
+                                There was no single experience of training. Different people had different experiences, depending on who they were, when and where they joined up, what unit they joined, where they were sent, and how easily they adapted to their new life. Look, for instance, at what happened to two men who volunteered early in the war. 
+                            </p>
+                        <button id="Read_More_btn_2" class="hvr-curl-bottom-right">Read Entire Article</button>
+                    </section>
+                            <div id="myModal_2" class="modal_2">
+                                <div class="modal-content_2">
+                                    <span class="close_2">&times;</span>
+                                        <h1>
+                                            Life as a Soldier
+                                        </h1>
+                                        <section class="main_text">
+                                        <p>
+                                            Every single one of the 65 million men mobilised to fight in the First World War had to be trained before being sent into battle. What was training like? It is hard to generalise. 
+                                        </p>
+                                        <p>
+                                            There was no single experience of training. Different people had different experiences, depending on who they were, when and where they joined up, what unit they joined, where they were sent, and how easily they adapted to their new life. Look, for instance, at what happened to two men who volunteered early in the war. 
+                                        </p>
+                                        <p>
+                                            Private Tomkinson (18th Battalion, Manchester Regiment) began his military career cleaning up the old amusement park which was to become his battalion’s barracks and did not receive a uniform and boots for months. This was typical of the shortages that confronted recruits to Kitchener’s army, as Peter Simkins discusses here. Nonetheless, by the time his unit went to France in October 1915, it had received ‘13 months good sound training’.[1]
+                                        </p>
+                                        <p>
+                                            In contrast, Herbert Sulzbach, who joined the German army in August 1914, found himself in the front line just four weeks later, after only the most rudimentary training. Still, some common themes emerge, and this article will concentrate on those who joined from 1916 on, after the initial ‘rush to the colours’ had died down and the training system had settled into a groove.
+                                        </p>
+                                    </section>
+                                </div>
+                            </div>
+                    <section id="article_3">
+                        <section class="headline">
+                            Who were the soldiers?
+                        </section>
+                        <iframe src="https://giphy.com/embed/3og0IRrpCFucGEkbC0" width="320vw" height="210vw" frameBorder="0" allowFullScreen></iframe>
+                            <p>
+                                New recruits in all armies were first put through three months of basic training. The aim of this course was: to build up physical fitness and confidence; instil discipline and obedience; and teach the fundamental military skills necessary to function in the army.
+                            </p>
+                        
+                        <button id="Read_More_btn_3" class="hvr-curl-bottom-right">Read Entire Article</button>
+                    </section>
+                        <div id="myModal_3" class="modal_3">
+                            <div class="modal-content_3">
+                                <span class="close_3">&times;</span>
+                                <h1>
+                                    Who were the soldiers?
+                                </h1>
+                                <section id="main_text">
+                                        <p>
+                                            New recruits in all armies were first put through three months of basic training. The aim of this course was: to build up physical fitness and confidence; instil discipline and obedience; and teach the fundamental military skills necessary to function in the army.
+                                        </p>
+                                        <p>
+                                            A typical day started with Reveille (a bugle or trumpet call to wake the soldiers and call them to duty) at 5.30 a.m. After tidying up and cleaning their quarters and having a brew, at 6.30 recruits would parade for an hour and a half to work on their fitness. After breakfast at 8, the morning was spent drilling on the parade square, learning, for instance, to march, form fours and about turn . Between 12.15 and 2 p.m. the men took lunch before returning for more drill in the afternoon until 4.15. The unlucky might be detailed off for fatigues or work parties thereafter, but otherwise recruits were off duty, although they might have to spend time cleaning kit and shining boots. In large garrison towns like Aldershot, there were leisure facilities in the shape of the ‘Smith-Dorrien Soldiers’ Home’, with a billiards room, a library, recreation rooms, private baths and a buffet. More remote locations might have nothing similar.
+                                        </p>
+                                        <p>
+                                            After a few weeks of this, training began to get more advanced. Soldiers began to learn the basics of movement in the field and were introduced to night operations and route marching. Later would come weapons handling, marksmanship and digging trenches.   
+                                        </p>
+                                </section>
+                        </div>
+                       </div>
+
+                   
+                </section>
+
+                <section id="phaser-war-game">
+
+                    <div class="instruction">
+                        <h1 class="hvr-hang">War Game</h1>
+                        <h3>How to Play:</h3>
+                        <p>
+                            Press "Arrow keys" to move the soldier
+                        </p>
+                        <p>
+                            Press "Space key" to shoot
+                        </p>
+                    </div>
+
+                    <div id="war-game"></div>
+
+                </section>
+
+                <footer id="test">
+                    <a href="Goldrush_article.html">
+                        <img src="img/left_arrow_3.png" id="previous">
+                    </a>
+                    <a href="Summary_Page.html">
+                        <img src="img/right_arrow_3.png" id="next">
+                    </a>
+                </footer>
+
+                <!-- scripts -->
+                <script src="js/script.js"></script>
+
+
+                <script src="js/flip.js"></script>
+                <script src="js/war.js"></script>
+
+                <!-- game phaser -->
+                <script src="./game/war/index.js"></script>
+
+</body>
+
+</html>

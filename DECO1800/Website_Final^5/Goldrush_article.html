@@ -1,0 +1,427 @@
+<html>
+
+<head>
+    <!--CSS -->
+    <link rel="stylesheet" type="text/css" href="Css/style.css">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!-- hover -->
+    <link rel="stylesheet" href="./lib/hover-min.css">
+
+
+    <!-- scripts -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+
+    <!-- data -->
+    <script src="js/data.js"></script>
+
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="./lib/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./lib/slick/slick-theme.css" />
+    <script src="./lib/slick/slick.min.js"></script>
+
+
+
+    <!-- typewriter.js -->
+    <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+
+    <!-- leaflet css -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Trocchi" rel="stylesheet">
+</head>
+
+<body>
+    <div class="pure-container" data-effect="pure-effect-slide">
+        <input type="checkbox" id="pure-toggle-left" class="pure-toggle" data-toggle="left">
+        <label class="pure-toggle-label" for="pure-toggle-left" data-toggle-label="left">
+            <span class="pure-toggle-icon"></span>
+        </label>
+
+        <div class="pure-drawer" data-position="left">
+            <div class="nav-btns">
+                <div class="hvr-underline-reveal">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                </div>
+                <div class="hvr-underline-reveal">
+                    <a href="Convicts_article.html">
+                        <li>Convicts</li>
+                    </a>
+                </div>
+                <div class="hvr-underline-reveal">
+                    <a href="Goldrush_article.html">
+                        <li>Goldrush</li>
+                    </a>
+                </div>
+                <div class="hvr-underline-reveal">
+                    <a href="War_article.html">
+                        <li>WWI</li>
+                    </a>
+                </div>
+                <div class="hvr-underline-reveal">
+                    <a href="Summary_Page.html">
+                        <li>Summary</li>
+                    </a>
+                </div>
+                <div class="hvr-underline-reveal">
+                    <a href="About_Us.html">
+                        <li>About Us</li>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pure-pusher-container">
+            <div class="pure-pusher">
+                <section id="timeline">
+                    <div class='container'>
+                        <div class="icon">
+                            <img src="./img/boat_2.png" class="hvr-bounce-in" id="boat">
+                            <img src="./img/gold_2.png " class="hvr-bob" id="gold">
+                            <img src="./img/helmet.png " class="hvr-wobble-skew" id="helmet">
+                            <img src="./img/city_2.png " class="hvr-grow-rotate" id="city">
+                        </div>
+                        <div class='timeline'>
+                            <div class='start'></div>
+                        </div>
+                        <div class='entries'>
+                            <div class='entry project'>
+                                <a href="Convicts_article.html">
+                                    <div class='dot'></div>
+                                </a>
+                                <div class='label'>
+                                    <div class='time'>
+                                        1787 &#8212
+                                    </div>
+                                    <div class='detail'>
+                                        Convicts
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='entry study'>
+                                <a href="Goldrush_article.html">
+                                    <div class='dot'></div>
+                                </a>
+                                <div class='label'>
+                                    <div class='time'>
+                                        1850 &#8212
+                                    </div>
+                                    <div class='detail'>
+                                        Gold Rush
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='entry project'>
+                                <a href="War_article.html">
+                                    <div class='dot'></div>
+                                </a>
+                                <div class='label'>
+                                    <div class='time'>
+                                        1914 &#8212 1918
+                                    </div>
+                                    <div class='detail'>
+                                        World War I
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='entry life'>
+                                <a href="Summary_Page.html">
+                                    <div class='dot'></div>
+                                </a>
+                                <div class='label'>
+                                    <div class='time'>
+                                        2018
+                                    </div>
+                                    <div class='detail'>
+                                        Summary
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <header id="header">
+                    <img src="img/banner.png" id="banner">
+                    <img src="img/Header_Text_3.png" id="Header_Text">
+                    <h3>
+                        Gold Rush 1850+
+                    </h3>
+                    <section id="links">
+                        <a href="About_Us.html">About Us</a>
+                    </section>
+                </header>
+                <section id="GR_articles_container">
+                    <section id="GR_article_1">
+                        <div id="Instruction-Manual">
+                            <h1 id=Manual-Heading>Mining Accidents</h1>
+                            <div id="Instructions">
+                                <!-- put data here -->
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <!--Articles-->
+                <section id="GR_ARTICLE_CONT">
+                    <section id="articles_container">
+                        <section id="article_1">
+                            <section class="headline">
+                                Gold in Queensland
+                            </section>
+
+                            <iframe src="https://giphy.com/embed/26wkRnHzWSiT6F4tO" width="250" height="250"
+                                frameBorder="0" class="giphy-embed" allowFullScreen>
+                            </iframe>
+                            <p>
+                                Gold symbolises wealth. It transformed Queensland’s history and landscape. Gold brought migrants from other colonies and overseas and it established new towns, some in areas not previously settled by Europeans. The timely discovery of gold at Gympie in 1867 saved Queensland from the worst effects of the 1866 economic depression, and provided an important boost during the first 50 years of the State.
+                            </p>
+                            <p>
+                                Although gold mining was less important than coal for much of the twentieth century, when coal prices fell in the 1980s and gold prices climbed, gold mining was once again actively pursued and old goldfields such as Charters Towers and Cracow reopened.
+                            </p>
+                            <button id="Read_More_btn" class="hvr-curl-bottom-right">Read Entire Article</button>
+                        </section>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h1>
+                                    Gold in Queensland
+                                </h1>
+                                <section class="main_text">
+                                    <p>
+                                        Gold symbolises wealth. It transformed Queensland’s history and landscape. Gold brought migrants from other colonies and overseas and it established new towns, some in areas not previously settled by Europeans. The timely discovery of gold at Gympie in 1867 saved Queensland from the worst effects of the 1866 economic depression, and provided an important boost during the first 50 years of the
+                                        State.
+                                    </p>
+                                    <p>
+                                        Although gold mining was less important than coal for much of the twentieth century, when coal prices fell in the 1980s and gold prices climbed, gold mining was once again actively pursued and old goldfields such as Charters
+                                        Towers and Cracow reopened.
+                                    </p>
+                                    <p>
+                                        Small gold deposits were discovered across the Darling Downs through the 1850s, preceding the first gold rush in Queensland at Canoona near Rockhampton in
+                                        1858. The Canoona rush was proved to be a relatively small deposit and was quickly stripped. Yet thousands continued arriving into Rockhampton only to
+                                        have to leave again, often destitute. Exploration continued apace over the next
+                                        few years after the discovery at Gympie, with discoveries of gold at Charters
+                                        Towers in 1872 and a rush to the Palmer River in 1873, after the discovery of
+                                        alluvial gold there by James Mulligan.
+                                    </p>
+                                </section>
+                            </div>
+                        </div>
+                        <section id="article_2">
+                            <section class="headline">
+                                Who were these miners?
+                            </section>
+
+                            <iframe id="gif_1_gr" src="https://giphy.com/embed/xT0GqyTm0vCtxjIeZi" width="270" height="230"
+                                frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                            <p>
+                                A typical digger was a man in his 20s, either unmarried
+                                or with a young family. Although doctors and lawyers
+                                came to the goldfields, most diggers were tradesmen
+                                such as blacksmiths, builders, butchers, carpenters and
+                                shoemakers. They were well educated and most could
+                                read and write.
+                            </p>
+                            <p>
+                                Some people came to the diggings from nearby
+                                cities and towns by coach or on foot. Others came
+                                from all over Australia or from overseas. For those
+                                seeking their fortune, no distance was too far and
+                                no cost too great.
+                            </p>
+                            <p>
+                                Most of the diggers who came from overseas
+                                were either:
+                                <ul>
+                                    <li>English</li>
+                                    <li>Welsh</li>
+                                    <li>Irish</li>
+                                    <li>Scottish</li>
+                                </ul>
+                            </p>
+
+                            <button id="Read_More_btn_2" class="hvr-curl-bottom-right">Read Entire Article</button>
+                        </section>
+                        <div id="myModal_2" class="modal_2">
+                            <div class="modal-content_2">
+                                <span class="close_2">&times;</span>
+                                <h1>
+                                    Who were these miners?
+                                </h1>
+                                <section class="main_text">
+                                    <p>
+                                        A typical digger was a man in his 20s, either unmarried
+                                        or with a young family. Although doctors and lawyers
+                                        came to the goldfields, most diggers were tradesmen
+                                        such as blacksmiths, builders, butchers, carpenters and
+                                        shoemakers. They were well educated and most could
+                                        read and write.
+                                    </p>
+                                    <p>
+                                        Some people came to the diggings from nearby
+                                        cities and towns by coach or on foot. Others came
+                                        from all over Australia or from overseas. For those
+                                        seeking their fortune, no distance was too far and
+                                        no cost too great.
+                                    </p>
+                                    <p>
+                                        Most of the diggers who came from overseas
+                                        were either:
+                                        <ul>
+                                            <li>English</li>
+                                            <li>Welsh</li>
+                                            <li>Irish</li>
+                                            <li>Scottish</li>
+                                        </ul>
+                                        Europeans were also keen to make
+                                        their fortune and came from:
+                                        <ul>
+                                            <li>Germany</li>
+                                            <li>Italy</li>
+                                            <li>Poland</li>
+                                            <li>Denmark</li>
+                                            <li>France</li>
+                                            <li>Spain</li>
+                                            <li>Portugal</li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        Californian diggers came from America, and when news of the
+                                        riches being discovered spread to Asia, Chinese
+                                        diggers came too.
+                                    </p>
+
+                                </section>
+                            </div>
+                        </div>
+                        <section id="article_3">
+                            <section class="headline">
+                                Miners housing
+                            </section>
+                            <iframe src="https://giphy.com/embed/TyCtUbqsgeZoI" width="280" height="230" frameBorder="0" class="giphy-embed" allowFullScreen>
+                            </iframe>
+                            <p>
+                                When diggers arrived at a new goldfield they usually
+                                needed to find somewhere to live. Most diggers
+                                bought a roll of canvas and looked for an open piece
+                                of ground. Chopping down any trees in the way, they
+                                would build their first home, a tent. This provided
+                                enough room for one or two beds, a place to eat, and
+                                storage for their tools and personal belongings.
+                            </p>
+                            <p>
+                                Diggers added a few luxuries if they decided to stay
+                                for a while. A stone fireplace at one end of the tent
+                                meant they no longer had to cook in the open.
+                                The fire also provided warmth in winter. A wooden
+                                floor kept their belongings out of the mud.
+                            </p>
+                            <p>
+                                Despite these improvements, tent life was not
+                                comfortable. Canvas walls and roofs did not keep
+                                out the heat of the Australian summer or provide
+                                protection from the biting winter cold. Although
+                                tents gave shelter from the rain, they did not keep
+                                out insects, snakes or other wildlife.
+                            </p>
+
+                            <!-- Trigger/Open The Modal -->
+                            <button id="Read_More_btn_3" class="hvr-curl-bottom-right">Read Entire Article</button>
+                        </section>
+                        <!-- The Modal -->
+                        <div id="myModal_3" class="modal_3">
+                            <!-- Modal content -->
+                            <div class="modal-content_3">
+                                <span class="close_3">&times;</span>
+                                <h1>
+                                    Miner's Housing
+                                </h1>
+                                <section class="main_text">
+                                     
+                                    <p>
+                                        When diggers arrived at a new goldfield they usually
+                                        needed to find somewhere to live. Most diggers
+                                        bought a roll of canvas and looked for an open piece
+                                        of ground. Chopping down any trees in the way, they
+                                        would build their first home, a tent. This provided
+                                        enough room for one or two beds, a place to eat, and
+                                        storage for their tools and personal belongings.
+
+                                    </p>
+                                    <p>
+                                        Diggers added a few luxuries if they decided to stay
+                                        for a while. A stone fireplace at one end of the tent
+                                        meant they no longer had to cook in the open.
+                                        The fire also provided warmth in winter. A wooden
+                                        floor kept their belongings out of the mud.
+                                    </p>
+                                    <p>
+                                        Despite these improvements, tent life was not
+                                        comfortable. Canvas walls and roofs did not keep
+                                        out the heat of the Australian summer or provide
+                                        protection from the biting winter cold. Although
+                                        tents gave shelter from the rain, they did not keep
+                                        out insects, snakes or other wildlife.
+                                    </p>
+                                    <p>
+                                        Some diggers became tired of tent life and built
+                                        themselves more substantial bark huts.
+                                        The result was a simple but sturdy home. Some diggers
+                                        made them even more comfortable by constructing
+                                        wooden shutters for the windows, putting down a
+                                        wooden floor and lining the bark walls with canvas.
+                                        The lining kept out the wind, insects and snakes.
+                                        In some areas, Aboriginal men made money building
+                                        bark huts for the diggers. In Gympie, Queensland, they
+                                        were paid about three shillings for this work.
+                                    </p>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+
+                <section id="map-section">
+                    <h1 class="hvr-bounce-out">Map</h1>
+                    <article id="map"></article>
+                    <aside id="marker-details"></aside>
+                </section>
+
+                <footer>
+                    <a href="Convicts_article.html">
+                        <img src="img/left_arrow_3.png" id="previous">
+                    </a>
+                    <a href="War_article.html">
+                        <img src="img/right_arrow_3.png" id="next">
+                    </a>
+                </footer>
+
+                <!-- scripts -->
+
+                <!-- leaftlet -->
+                <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+                    crossorigin=""></script>
+
+                <!--<script src="mine_sweep.js"></script>-->
+                <script src="js/script.js"></script>
+                <script src="js/gold_rush.js"></script>
+
+
+
+</body>
+
+</html>
