@@ -12,7 +12,7 @@
 - `a2_support.py` **utils**
 - `gui.py` **main file**
 
-run `python3 guy.py` to start game
+run `python3 gui.py` to start game
 
 ## a3 Queue App
 
