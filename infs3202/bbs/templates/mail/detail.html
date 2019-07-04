@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Mail details{% endblock%}
+{% block main %}
+
+<p>Sender id: {{ sname }}</p>
+<p>Receiver id: {{ rname }}</p>
+<p>Content: {{ mail.content }}</p>
+
+{% endblock %}

@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block title %}New Post{% endblock %}
+{% block main %}
+
+    <div id="main">
+        <div id="content">
+            <div class="panel">
+                <div class="inner post">
+                    <form id="create_topic_form" method="post" action="{{ url_for('.add', token=token) }}">
+                        <fieldset>
+                        <textarea autofocus class='span9' id='title'
+                                  name='title' rows='1'>
+
+
+                        </textarea>
+
+                            <span class="tab-selector">Choose board：</span>
+                            <select name="board_id" id="board" required>
+                                {% for b in bs %}
+                                    {% if bid == b.id %}
+                                        <option value="{{ b.id }}" selected>{{ b.title }}</option>
+                                    {% else %}
+                                        <option value="{{ b.id }}">{{ b.title }}</option>
+                                    {% endif %}
+                                {% endfor %}
+                            </select>
+                            {# new topic button #}
+                            <button type="button" class="btn btn-mini btn-success"
+                                    data-toggle="modal" data-target="#newBoard"
+                                    style="margin: 0 0 10px 10px;"
+                            >
+                                Add new Board
+                            </button>
+
+                            <div class="modal" id="newBoard" tabindex="-1" role="dialog" aria-hidden="true"
+                                 style="height: 40%; overflow-y: hidden;">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="newBoardLabel">Add new Board</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                                {# 由于 form 里面无法增加新的 form, 因此只能使用 ajax 来增加 board #}
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="message-text" class="col-form-label">New Board:</label>
+                                                    <input class="form-control" id="message-text" name="title">
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                          <div class="modal-footer" style="background-color: #fff;">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                              <button type="button" id="id-newBoard" class="btn btn-success">Add</button>
+                                          </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class='markdown_editor in_editor'>
+                                <div class='markdown_in_editor'>
+                                    <textarea class='editor' name='content' rows='20'>
+
+                                            {{ md }}
+                                    </textarea>
+                                    <div class='editor_buttons'>
+                                        <input type="submit" class='btn btn-success submit_btn'
+                                               data-loading-text="uploading..."
+                                               value="Post it">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <form id="custom-upload-md" action="/topic/upload" method="POST" enctype="multipart/form-data"
+                          style="float: right; margin-top: -30px;">
+                        <input type="file" name="custom-md" class="">
+                        <button type="submit" value="Upload" class="btn btn-success">Upload</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function () {
+            window.onload = function () {
+                var editor = new Editor();
+                editor.render($('.editor')[0]);
+            }
+        })();
+    </script>
+{% endblock %}
+
+{% block references %}
+    <script src="/static/js/board.js"></script>
+{% endblock %}

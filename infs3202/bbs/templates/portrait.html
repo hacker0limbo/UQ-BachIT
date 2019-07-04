@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Protrait{% endblock %}
+{% block main %}
+
+    <div align="center">
+        <h4>Hello {{ user.username }}, You can modify your avatar here!</h4>
+    </div>
+
+    <hr>
+    <div align="center">
+         <form method="post" action="{{ url_for('.avatar_add')}} " enctype="multipart/form-data">
+            <input type="file" name="avatar" id="id-avatar-upload">
+             <label class="custom-file-label" for="id-avatar-upload">Choose file</label>
+            <button type="submit" class="btn btn-success">Upload Portrait</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div align="center">
+        <h5>Current Avatar:</h5>
+        <img src="{{ user.image }} " height="200" width="200">
+    </div>
+{% endblock %}

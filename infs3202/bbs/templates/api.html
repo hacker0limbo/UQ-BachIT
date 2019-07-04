@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}API{% endblock%}
+{% block main %}
+
+<div align="center">
+    <h1>API are listed</h1>
+
+    <div class="alert alert-warning" role="alert" >
+        Note: CORS are not allowed
+    </div>
+
+    <div>
+      <ul class="list-group" style="margin: 0 2rem;">
+          <a href="{{ url_for('api.topic_all') }}"
+             class="list-group-item
+             list-group-item-action
+             list-group-item-success">All topics</a>
+          <a href="{{ url_for('api.title_all') }}"
+             class="list-group-item
+             list-group-item-action
+             list-group-item-info">All topics with titles only</a>
+        </ul>
+
+    </div>
+
+</div>
+
+{% endblock %}

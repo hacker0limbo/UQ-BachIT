@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}BBS Home{% endblock %}
+{% block main %}
+
+    <div id="main">
+
+        {% include 'includes/_sidebar.html' %}
+
+        <div id="content">
+            <div class="panel">
+                <div class="header">
+                    <a href="/topic"
+                       class="topic-tab current-tab">
+                        All Posts
+                    </a>
+
+                    {% for b in bs %}
+                        <a href="/topic?board_id={{ b.id }}"
+                           class="topic-tab current-tab">
+                            {{ b.title }}
+                        </a>
+                    {% endfor %}
+                </div>
+                <div class="inner post">
+                    <div class="topic_list">
+                        {% for t in ms %}
+                            <div class="cell">
+                                <a class="user_avatar pull-left"
+                                   href="{{ url_for('index.userinfo', name=t.user().username) }}">
+                                    <img src="{{ t.user().image }}" title="{{ t.user().username }}">
+                                </a>
+
+                                <span class="reply_count pull-left">
+                            <span class="count_of_replies" title="回复数">
+                              {{ t.reply_count() }}
+                            </span>
+                            <span class="count_seperator">/</span>
+                            <span class="count_of_visits" title="点击数">
+                              {{ t.views }}
+                            </span>
+                          </span>
+
+                                <span class="last_time pull-right">
+                              <span class="last_active_time">{{ ct[t.id]['ct'] }}</span>
+                            </span>
+                                <div class="topic_title_wrapper">
+                                    <a class="topic_title" href="{{ url_for('topic.detail', id=t.id) }}">
+                                        {{ t.title }}
+                                    </a>
+                                    <!--<span>{{ t.replies() | count }} / {{ t.views }}</span>-->
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+
+{% endblock %}
+
+

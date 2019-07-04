@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock%}
+{% block main %}
+<div id="main">
+        <div id="content">
+            <div class="panel">
+                <div class="header">
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="/">Home</a>
+                            <span class="divider">/</span>
+                        </li>
+                        <li class="active">Register new account</li>
+                    </ul>
+                </div>
+                <div class="inner">
+                    <form id="signin_form" class="form-horizontal" action="{{ url_for('.register') }}" method="post">
+                        <div class="control-group">
+                            <label class="control-label" for="name">username</label>
+                            <div class="controls">
+                                <input class="input-xlarge" id="name" name="username" size="30" type="text">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="pass">password</label>
+
+                            <div class="controls">
+                                <input class="input-xlarge" id="pass" name="password" size="30" type="password">
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <input class="span-primary" value="register" type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

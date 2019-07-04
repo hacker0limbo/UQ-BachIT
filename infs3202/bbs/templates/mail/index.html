@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Mail details{% endblock%}
+{% block main %}
+
+<p>发送邮件</p>
+<form method="post" action="{{ url_for('mail.add') }}">
+    <input type="text" name="receiver_name" placeholder="收件人名称"><br>
+    <textarea autofocus class='span9' id='id-title' name='title' rows='1' placeholder="邮件标题"></textarea><br>
+    <textarea autofocus class='span9' id='id-content' name='content' rows='20' placeholder="邮件正文"></textarea><br>
+
+    <button type="submit">发送邮件</button>
+</form>
+
+{% endblock %}

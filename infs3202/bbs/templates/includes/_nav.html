@@ -1,0 +1,47 @@
+
+<style>
+    .nav li a {
+        font-size: 11pt;
+    }
+</style>
+
+<nav class="navbar" style="padding: 0; margin: 0;">
+    <div class='navbar-inner'>
+        <div class='container'>
+            <ul class="nav pull-left" style="height: 0">
+                <li><a href="/chatroom">Chat</a></li>
+                <li><a href="/map">Map</a></li>
+                <li><a href="/calendar">Calendar</a></li>
+                <li>
+                    <form action="/search/topic" method="post" class="navbar-form form-inline" role="search">
+                        <input id="input-topic-search" type="text" name="topicTitle" class="form-control" placeholder="Search Topic">
+                        <button type="submit" class="btn btn-mini btn-success" style="margin-left: 5px; padding: 3px 8px;">Search</button>
+                    </form>
+                </li>
+
+            </ul>
+            <ul class='nav pull-right'>
+                <li><a href='/topic'>Home</a></li>
+                <li><a href='/public/api'>API</a></li>
+                <li><a href="/about">About</a></li>
+                {% if current_user() is not none %}
+                    <li><a href="/mail/message" target="">Messages</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/setting">Settings</a></li>
+                            <li><a href="/portrait">Portrait</a></li>
+                            <li><a href={{ url_for('index.userinfo', name=current_user().username) }}>Profile</a></li>
+                        </ul>
+                    </li>
+                {% endif %}
+                {% if current_user() is not none %}
+                    <li><a href='/logout'>Logout</a></li>
+                {% else %}
+                    <li><a href='/register'>Register</a></li>
+                    <li><a href='/login'>Login</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
